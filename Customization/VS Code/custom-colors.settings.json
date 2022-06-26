@@ -1,0 +1,22 @@
+"workbench.colorCustomizations": {
+    "[The Digital Life]": {
+        "sideBar.background": "#000000",
+        "activityBar.background": "#000000",
+        "minimap.background": "#000000",
+        "editorGroupHeader.tabsBackground": "#000000",
+        "editorGroupHeader.tabsBorder": "#000000",
+        "editorGroupHeader.noTabsBackground": "#000000",
+        "tab.inactiveBackground": "#000000",
+        "editor.background": "#000000",
+        "statusBar.background": "#000000",
+        "menubar.selectionBackground": "#000000",
+        "titleBar.activeBackground": "#000000",
+        "breadcrumb.background": "#000000",
+        "scrollbarSlider.activeBackground": "#ffffff",
+        "scrollbar.shadow": "#ffffff",
+        "scrollbarSlider.background": "#777777",
+        "scrollbarSlider.hoverBackground": "#888888",
+        "panel.background": "#000000",
+        "editorGutter.background": "#000000",
+    }
+}
