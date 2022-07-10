@@ -1,0 +1,5 @@
+mklink /j "C:\Games\World of Warcraft\_retail_\Interface" "C:\Users\OneDrive\Documents\My Games\WOW\Interface"
+mklink /j "C:\Games\World of Warcraft\_retail_\WTF" "C:\Users\nick\Documents\My Games\WOW\WTF"
+mklink /J C:\Users\nick\.ssh "C:\Users\nick\OneDrive - chronnick.com\Documents\Appdata\.ssh"
+mklink /J C:\Users\nick\.android "C:\Users\nick\OneDrive - chronnick.com\Documents\Appdata\.android"
+mklink /J C:\Users\nick\.vscode "C:\Users\nick\OneDrive - chronnick.com\Documents\Appdata\.vscode"
