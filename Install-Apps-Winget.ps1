@@ -1,3 +1,4 @@
+winget export -o c:\installed.log
 winget install -e --id dnGrep.dnGrep
 winget install -e --id 7zip.7zip
 winget install -e --id Discord.Discord
