@@ -44,18 +44,3 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 
 # Disable LocationHistory
 New-ItemProperty "SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{E6AD100E-5F4E-44CD-BE0F-2265D88D14F5}"  -Name 'Value' -Value 'Deny' -Force -ErrorAction SilentlyContinue|out-null
- 
-
-# Remove App Bloat
-Get-AppxPackage *3dbuilder* | Remove-AppxPackage
-Get-AppxPackage *bingfinance* | Remove-AppxPackage
-Get-AppxPackage *bingnews* | Remove-AppxPackage
-Get-AppxPackage *bingsports* | Remove-AppxPackage
-Get-AppxPackage *bingtravel* | Remove-AppxPackage
-Get-AppxPackage *bingweather* | Remove-AppxPackage
-Get-AppxPackage "*CandyCrushSodaSaga" | Remove-AppxPackage
-Get-AppxPackage *getstarted* | Remove-AppxPackage
-Get-AppxPackage *solitairecollection* | Remove-AppxPackage
-Get-AppxPackage *xboxapp* | Remove-AppxPackage
-Get-AppxPackage *zunemusic* | Remove-AppxPackage
-Get-AppxPackage *zunevideo* | Remove-AppxPackage

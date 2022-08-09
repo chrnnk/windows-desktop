@@ -11,3 +11,16 @@ Get-AppxPackage *soundrecorder* | Remove-AppxPackage # Voice Recorder
 Get-AppxPackage *YourPhone* | Remove-AppxPackage # YourPhone
 Get-AppxPackage *Maps* | Remove-AppxPackage # Maps
 Get-AppxPackage *GetHelp* | Remove-AppxPackage # Help lol
+
+Get-AppxPackage *3dbuilder* | Remove-AppxPackage
+Get-AppxPackage *bingfinance* | Remove-AppxPackage
+Get-AppxPackage *bingnews* | Remove-AppxPackage
+Get-AppxPackage *bingsports* | Remove-AppxPackage
+Get-AppxPackage *bingtravel* | Remove-AppxPackage
+Get-AppxPackage *bingweather* | Remove-AppxPackage
+Get-AppxPackage *CandyCrushSodaSaga | Remove-AppxPackage
+Get-AppxPackage *getstarted* | Remove-AppxPackage
+Get-AppxPackage *solitairecollection* | Remove-AppxPackage
+Get-AppxPackage *xboxapp* | Remove-AppxPackage
+Get-AppxPackage *zunemusic* | Remove-AppxPackage
+Get-AppxPackage *zunevideo* | Remove-AppxPackage
