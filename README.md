@@ -1,7 +1,7 @@
 # windows-tweaks
 collection of tweaks, registry settings, batch files, etc
 
-### winget update all
+### winget upgrade all
 ```
 winget upgrade --all
 ```
