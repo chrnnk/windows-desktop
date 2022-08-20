@@ -10,4 +10,5 @@ winget install -e --id tailscale.tailscale
 winget install -e --id Obsidian.Obsidian
 winget install -e --id Logitech.GHUB
 winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Mozilla.Firefox
 winget upgrade --all
