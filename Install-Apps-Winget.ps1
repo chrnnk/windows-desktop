@@ -23,17 +23,20 @@ winget install -e --id Microsoft.Office
 winget install -e --id Microsoft.OneDrive
 winget install -e --id Microsoft.Teams
 winget install -e --id Microsoft.VisualStudioCode
-winget install -e --id Microsoft.VC++2013Redist-x64
-winget install -e --id Microsoft.VC++2010Redist-x64
+#
 winget install -e --id Microsoft.DotNet.DesktopRuntime.3_1
-winget install -e --id Microsoft.VC++2012Redist-x86
-winget install -e --id Microsoft.VC++2015-2022Redist-x64
-winget install -e --id Microsoft.VC++2008Redist-x64
 winget install -e --id Microsoft.VC++2005Redist-x86
-winget install -e --id Microsoft.VC++2008Redist-x86
-winget install -e --id Microsoft.VC++2013Redist-x86
-winget install -e --id Microsoft.VC++2010Redist-x86
-winget install -e --id Microsoft.VC++2015-2022Redist-x86
 winget install -e --id Microsoft.VC++2005Redist-x64
+winget install -e --id Microsoft.VC++2008Redist-x86
+winget install -e --id Microsoft.VC++2008Redist-x64
+winget install -e --id Microsoft.VC++2010Redist-x64
+winget install -e --id Microsoft.VC++2010Redist-x86
+winget install -e --id Microsoft.VC++2012Redist-x86
 winget install -e --id Microsoft.VC++2012Redist-x64
+winget install -e --id Microsoft.VC++2013Redist-x64
+winget install -e --id Microsoft.VC++2013Redist-x86
+winget install -e --id Microsoft.VC++2015-2022Redist-x64
+winget install -e --id Microsoft.VC++2015-2022Redist-x86
+#
 winget upgrade --all
+#
