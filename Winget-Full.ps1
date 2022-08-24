@@ -63,3 +63,13 @@ Foreach ($app in $apps) {
         Write-host "Skipping Install of " $app.name
     }
 }
+
+#Remove Apps
+Write-Output "Removing Apps"
+
+$apps = "*3DPrint*", "Microsoft.MixedReality.Portal"
+Foreach ($app in $apps)
+{
+  Write-host "Uninstalling:" $app
+  Get-AppxPackage -allusers $app | Remove-AppxPackage
+}
