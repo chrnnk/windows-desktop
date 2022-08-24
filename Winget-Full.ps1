@@ -1,3 +1,6 @@
+# https://docs.microsoft.com/en-us/windows/package-manager/winget/
+# https://chrislayers.com/2021/08/01/scripting-winget/
+
 #Install WinGet
 #Based on this gist: https://gist.github.com/crutkas/6c2096eae387e544bd05cde246f23901
 $hasPackageManager = Get-AppPackage -name 'Microsoft.DesktopAppInstaller'
