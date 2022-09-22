@@ -1,5 +1,3 @@
-mklink /j "C:\Games\World of Warcraft\_retail_\Interface" "%UserProfile%\Documents\My Games\WOW\Interface"
-mklink /j "C:\Games\World of Warcraft\_retail_\WTF" "%UserProfile%\Documents\My Games\WOW\WTF"
 mklink /j %UserProfile%\.ssh "%UserProfile%\Documents\Appdata\.ssh"
 mklink /j %UserProfile%\.android "%UserProfile%\Documents\Appdata\.android"
 mklink /j %UserProfile%\.vscode "%UserProfile%\Documents\Appdata\.vscode"

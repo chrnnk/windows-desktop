@@ -1,1 +1,1 @@
-mklink /j "%UserProfile%\OneDrive - chrxnn.com\Documents" "C:\Users\nick\Documents"
+mklink /j "%UserProfile%\OneDrive - domain.com\Documents" "C:\Users\user\Documents"
