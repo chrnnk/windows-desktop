@@ -8,6 +8,7 @@ winget install -e --id EpicGames.EpicGamesLauncher
 winget install -e --id Libretro.RetroArch
 winget install -e --id Nvidia.PhysX
 winget install -e --id Valve.Steam
+winget install -e --id WowUp.Wowup
 
 # Sytem
 winget install -e --id 7zip.7zip
