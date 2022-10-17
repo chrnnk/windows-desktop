@@ -3,9 +3,8 @@ $TerminalPath = Join-Path $Env:LOCALAPPDATA "Packages/Microsoft.WindowsTerminal_
 if(!(Test-Path $TerminalPath)) {
     Throw "Windows Terminal have not been installed. winget install -e --id Microsoft.WindowsTerminal"}
 # Create symlink to Windows Terminal settings
-$TerminalProfileSource = Join-Path $PWD "../../config/windows_terminal.json"
-$TerminalPath = Get-WindowsStoreAppPath -App "Microsoft.WindowsTerminal_8wekyb3d8bbwe";
-$TerminalProfileDestination = Join-Path $TerminalPath "LocalState/settings.json";
+$TerminalProfileSource = Join-Path $TerminalPath "LocalState/settings.json"
+$TerminalProfileDestination = Join-Path $Env:OneDrive "Documents/Appdata/.vscode/settings.json";
 if(Test-Path $TerminalProfileDestination) {
     Remove-Item -Path $TerminalProfileDestination;}
 Write-Host "Creating symlink to Windows terminal settings..."
