@@ -52,8 +52,8 @@ winget install -e --id Microsoft.VC++2005Redist-x86
 winget install -e --id Microsoft.VC++2005Redist-x64
 winget install -e --id Microsoft.VC++2008Redist-x86
 winget install -e --id Microsoft.VC++2008Redist-x64
-winget install -e --id Microsoft.VC++2010Redist-x64
-winget install -e --id Microsoft.VC++2010Redist-x86
+winget install -e --id Microsoft.VCRedist.2010.x64
+winget install -e --id Microsoft.VCRedist.2010.x86
 winget install -e --id Microsoft.VC++2012Redist-x86
 winget install -e --id Microsoft.VC++2012Redist-x64
 winget install -e --id Microsoft.VC++2013Redist-x64
