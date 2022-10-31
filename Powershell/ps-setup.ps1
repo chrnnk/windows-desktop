@@ -21,7 +21,7 @@ if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
 & $profile
 
 Write-Host " "
-Write-Host "OMP Install"
+Write-Host "`nOMP Install`n"
 Write-Host " "
 winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
 
