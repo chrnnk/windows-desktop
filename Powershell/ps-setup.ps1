@@ -1,3 +1,7 @@
+# irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/ps-setup.ps1" | iex
+
+Write-Host "Run this as admin or it will start failing pretty quick"
+
 Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
 Set-ExecutionPolicy RemoteSigned 
 
