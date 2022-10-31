@@ -17,5 +17,14 @@ if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
  }
 & $profile
 
-# OMP Install
+Write-Host "OMP Install"
 winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
+
+Write-Host "Winfetch Install"
+Install-Script -Name pwshfetch-test-1
+
+Write-Host "PSReadLine Install"
+Install-Module PSReadLine
+
+Write-Host "Install Terminal-Icons"
+Install-Module Terminal-Icons
