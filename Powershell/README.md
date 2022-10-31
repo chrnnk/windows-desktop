@@ -4,5 +4,5 @@ Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 ```
 # One line install
 ```ps
-irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1" | iex
+irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/ps-setup.ps1" | iex
 ```
