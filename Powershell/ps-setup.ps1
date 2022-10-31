@@ -10,9 +10,10 @@ if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
  }
 # If the file already exists, show the message and do nothing.
  else {
-		 Get-Item -Path $PROFILE | Move-Item -Destination oldprofile.ps1
-		 Invoke-RestMethod https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
-		 Write-Host "The profile @ [$PROFILE] has been created and old profile removed."
+		 # Get-Item -Path $PROFILE | Move-Item -Destination oldprofile.ps1
+		 # Invoke-RestMethod https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
+		 # Write-Host "The profile @ [$PROFILE] has been created and old profile removed."
+		 Write-Host "[$PROFILE] already exists, not touched."
  }
 & $profile
 
