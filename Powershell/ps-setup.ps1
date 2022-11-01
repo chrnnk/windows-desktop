@@ -2,6 +2,12 @@
 
 Write-Host "`r`nRun this as admin or it will start failing pretty quick`r`n"
 
+Write-Host "`r`nInstall Microsoft.WindowsTerminals`r`n"
+winget install -e --id Microsoft.WindowsTerminal
+
+Write-Host "`r`nInstall Microsoft.PowerShell`r`n"
+winget install -e --id Microsoft.PowerShell
+
 Write-Host "`r`nSetting the Microsoft PSGallery as a trusted source`r`n"
 Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
 
@@ -20,7 +26,6 @@ Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1
 Write-Host "`r`nExtracting cove.zip to $DownloadsFolder`r`n"
 Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove -Force
 
-
 Write-Host "`r`nWinfetch Install`r`n"
 Install-Script -Name pwshfetch-test-1
 
@@ -29,6 +34,9 @@ Install-Module PSReadLine -Force
 
 Write-Host "`r`nInstall Terminal-Icons`r`n"
 Install-Module Terminal-Icons
+
+Write-Host "`r`nSince we're here, upgrade everything`r`n"
+winget upgrade --all
 
 #If the file does not exist, create it.
 if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
@@ -47,5 +55,5 @@ if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
 		 # Write-Host "The profile @ [$PROFILE] has been created and old profile removed."
 		 Write-Host "`r`n[$PROFILE] already exists, not touched.`r`n"
  }
-# & $profile
+
 Write-Host "`r`nBrowse to $DownloadsFolder\cove, select and install all fonts. Then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal`r`n"
