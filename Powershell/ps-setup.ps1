@@ -12,12 +12,13 @@ Write-Host "`r`nInstalling OhMyPosh`r`n"
 winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
 
 Write-Host "`r`nBrowse to $DownloadsFolder\cove, select and install all fonts. Then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal`r`n"
-# Finding Downloads folder"
 $DownloadsFolder = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
+
 Write-Host "`r`nDownloading cove.zip to Downloads folder`r`n"
 Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha -o $DownloadsFolder/cove.zip
+
 Write-Host "`r`nExtracting cove.zip to $DownloadsFolder`r`n"
-Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove
+Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove -Force
 
 
 Write-Host "`r`nWinfetch Install`r`n"
