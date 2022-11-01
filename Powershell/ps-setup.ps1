@@ -8,12 +8,15 @@ Set-ExecutionPolicy RemoteSigned
 Write-Host "OMP Install"
 winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
 
-Write-Host "Font Download, unzip and install these fonts, then set as Default profile Appearance in Windows Terminal"
-# Find Downloads folder
+Write-Host "Browse to $DownloadsFolder\cove. select and install all fonts, then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal"
+# Finding Downloads folder"
 $DownloadsFolder = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
+Write-Host "Downloading cove.zip to Downloads folder"
 Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha -o $DownloadsFolder/cove.zip
-Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder
-pause
+Write-Host "Extracting"
+Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove
+
+
 Write-Host "Winfetch Install"
 Install-Script -Name pwshfetch-test-1
 
@@ -41,3 +44,5 @@ if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
 		 Write-Host "[$PROFILE] already exists, not touched."
  }
 & $profile
+
+Write-Host "Browse to $DownloadsFolder\cove. select and install all fonts, then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal"
