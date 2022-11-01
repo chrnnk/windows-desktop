@@ -2,7 +2,7 @@
 
 Write-Host "`r`nRun this as admin or it will start failing pretty quick`r`n"
 
-Write-Host "`r`nInstall Microsoft.WindowsTerminals`r`n"
+Write-Host "`r`nInstall Microsoft.WindowsTerminal`r`n"
 winget install -e --id Microsoft.WindowsTerminal
 
 Write-Host "`r`nInstall Microsoft.PowerShell`r`n"
