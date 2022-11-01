@@ -1,4 +1,4 @@
-﻿# i think unraid needed this, i don't love it
+﻿; i think unraid needed this, i don't love it
  Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]

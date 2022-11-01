@@ -1,6 +1,6 @@
 # Remove potential bloat
 Get-AppxPackage *Microsoft.3DBuilder* | Remove-AppxPackage
-#Get-AppxPackage *Microsoft.Appconnector* | Remove-AppxPackage
+# Get-AppxPackage *Microsoft.Appconnector* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingFinance* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingNews* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingSports* | Remove-AppxPackage
@@ -20,7 +20,7 @@ Get-AppxPackage *Microsoft.MinecraftUWP* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.NetworkSpeedTest* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.WindowsPhone* | Remove-AppxPackage
 # Get-AppxPackage *Microsoft.CommsPhone* | Remove-AppxPackage
-#Get-AppxPackage *Microsoft.ConnectivityStore* | Remove-AppxPackage
+# Get-AppxPackage *Microsoft.ConnectivityStore* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Office.Sway* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingFoodAndDrink* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingTravel* | Remove-AppxPackage
