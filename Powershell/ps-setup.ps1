@@ -1,11 +1,14 @@
 # irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/ps-setup.ps1" | iex
 
-Write-Host "Run this as admin or it will start failing pretty quick"
+Write-Host "`r`nRun this as admin or it will start failing pretty quick`r`n"
 
+Write-Host "`r`nSetting the Microsoft PSGallery as a trusted source`r`n"
 Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
+
+Write-Host "`r`nAllowing local scripts to run unsigned`r`n"
 Set-ExecutionPolicy RemoteSigned 
 
-Write-Host "OMP Install"
+Write-Host "`r`nInstalling OhMyPosh`r`n"
 winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
 
 Write-Host "Browse to $DownloadsFolder\cove. select and install all fonts, then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal"
