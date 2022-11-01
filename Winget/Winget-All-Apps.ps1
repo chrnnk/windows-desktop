@@ -57,6 +57,7 @@ winget install -e --id Microsoft.PowerShell
 # Runtimes
 winget install -e --id Oracle.JavaRuntimeEnvironment
 winget install -e --id Microsoft.DotNet.DesktopRuntime.3_1
+winget install -e --id Microsoft.DotNet.DesktopRuntime.6
 winget install -e --id Microsoft.VC++2005Redist-x86
 winget install -e --id Microsoft.VC++2005Redist-x64
 winget install -e --id Microsoft.VC++2008Redist-x86
@@ -71,4 +72,3 @@ winget install -e --id Microsoft.VCRedist.2015+.x64
 winget install -e --id Microsoft.VCRedist.2015+.x86
 winget install -e --id Microsoft.VC++2015-2022Redist-x64
 winget install -e --id Microsoft.VC++2015-2022Redist-x86
-winget install -e --id Microsoft.DotNet.DesktopRuntime.6
