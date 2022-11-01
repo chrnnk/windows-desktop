@@ -12,7 +12,7 @@ Write-Host "`r`nSetting the Microsoft PSGallery as a trusted source`r`n"
 Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted
 
 Write-Host "`r`nAllowing local scripts to run unsigned`r`n"
-Set-ExecutionPolicy RemoteSigned 
+Set-ExecutionPolicy RemoteSigned
 
 Write-Host "`r`nInstalling OhMyPosh`r`n"
 winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
@@ -35,7 +35,7 @@ Install-Module PSReadLine -Force
 Write-Host "`r`nInstall Terminal-Icons`r`n"
 Install-Module Terminal-Icons
 
-Write-Host "`r`nSince we're here, upgrade everything`r`n"
+Write-Host "`r`nSince we're here, winget upgrade everything else`r`n"
 winget upgrade --all
 
 #If the file does not exist, create it.
