@@ -9,8 +9,11 @@ Write-Host "OMP Install"
 winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
 
 Write-Host "Font Download, unzip and install these fonts, then set as Default profile Appearance in Windows Terminal"
-Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha -o cove.zip
-
+# Find Downloads folder
+$DownloadsFolder = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
+Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha -o $DownloadsFolder/cove.zip
+Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder
+pause
 Write-Host "Winfetch Install"
 Install-Script -Name pwshfetch-test-1
 
