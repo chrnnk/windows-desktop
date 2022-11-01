@@ -11,29 +11,29 @@ Set-ExecutionPolicy RemoteSigned
 Write-Host "`r`nInstalling OhMyPosh`r`n"
 winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
 
-Write-Host "Browse to $DownloadsFolder\cove. select and install all fonts, then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal"
+Write-Host "`r`nBrowse to $DownloadsFolder\cove, select and install all fonts. Then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal`r`n"
 # Finding Downloads folder"
 $DownloadsFolder = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path
-Write-Host "Downloading cove.zip to Downloads folder"
+Write-Host "`r`nDownloading cove.zip to Downloads folder`r`n"
 Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha -o $DownloadsFolder/cove.zip
-Write-Host "Extracting"
+Write-Host "`r`nExtracting cove.zip to $DownloadsFolder`r`n"
 Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove
 
 
-Write-Host "Winfetch Install"
+Write-Host "`r`nWinfetch Install`r`n"
 Install-Script -Name pwshfetch-test-1
 
-Write-Host "PSReadLine Install"
+Write-Host "`r`nPSReadLine Install`r`n"
 Install-Module PSReadLine -Force
 
-Write-Host "Install Terminal-Icons"
+Write-Host "`r`nInstall Terminal-Icons`r`n"
 Install-Module Terminal-Icons
 
 #If the file does not exist, create it.
 if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
      try {
          Invoke-RestMethod https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
-         Write-Host "The profile @ [$PROFILE] has been created."
+         Write-Host "`r`nThe profile @ [$PROFILE] has been created.`r`n"
      }
      catch {
          throw $_.Exception.Message
@@ -44,8 +44,6 @@ if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
 		 # Get-Item -Path $PROFILE | Move-Item -Destination oldprofile.ps1
 		 # Invoke-RestMethod https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
 		 # Write-Host "The profile @ [$PROFILE] has been created and old profile removed."
-		 Write-Host "[$PROFILE] already exists, not touched."
+		 Write-Host "`r`n[$PROFILE] already exists, not touched.`r`n"
  }
 & $profile
-
-Write-Host "Browse to $DownloadsFolder\cove. select and install all fonts, then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal"
