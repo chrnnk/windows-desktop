@@ -1,4 +1,4 @@
-To BypassTPM, RAM, or SecureBoot
+To Bypass TPM, RAM, or SecureBoot
 ```Shift+F10 during installation\
 regedit\
 Navigate to HKEY_LOCAL_MACHINE\SYSTEM\Setup\
