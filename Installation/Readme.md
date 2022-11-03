@@ -1,5 +1,6 @@
 To Bypass TPM, RAM, or SecureBoot
-```Shift+F10 during installation\
+```
+Shift+F10 during installation\
 regedit\
 Navigate to HKEY_LOCAL_MACHINE\SYSTEM\Setup\
 Right-click on Setup and click New > Key. Name that LabConfig\
@@ -9,5 +10,6 @@ BypassRAMCheck, change the Value data to 1, and press OK.\
 BypassSecureBootCheck, change the Value data to 1, and press OK.
 ```
 To Bypass No Internet
-```Shift+F10 during installation\
+```
+Shift+F10 during installation\
 OOBE\BYPASSNRO```
