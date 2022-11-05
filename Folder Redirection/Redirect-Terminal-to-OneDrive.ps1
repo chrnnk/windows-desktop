@@ -8,5 +8,5 @@ $TerminalProfileDestination = Join-Path $Env:OneDrive "Documents/Appdata/.vscode
 if(Test-Path $TerminalProfileDestination) {
     Remove-Item -Path $TerminalProfileDestination;}
 Write-Host "Creating symlink to Windows terminal settings..."
-New-Item -Path $TerminalProfileDestination -ItemType SymbolicLink -Value $TerminalProfileSource | Out-Null;
+Write-Host "New-Item -Path $TerminalProfileDestination -ItemType SymbolicLink -Value $TerminalProfileSource | Out-Null;"
 Pause
