@@ -6,6 +6,11 @@ Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
+function wgup([string]$var1, [string]$var2)
+{
+    winget upgrade --all
+}
+
 Set-Alias winfetch pwshfetch-test-1
 
 winfetch

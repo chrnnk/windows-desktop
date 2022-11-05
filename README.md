@@ -1,5 +1,5 @@
-# windows-tweaks
-collection of tweaks, registry settings, batch files, etc
+# windows-desktop
+Collection of tweaks, customizations, scripts, etc
 
 ### winget upgrade all
 ```
