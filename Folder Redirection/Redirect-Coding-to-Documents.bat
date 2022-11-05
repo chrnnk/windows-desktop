@@ -1,5 +1,4 @@
 mklink /j "%UserProfile%\.android" "%UserProfile%\Documents\Appdata\.android"
-mklink /j "%UserProfile%\.cache" "%UserProfile\Documents\Appdata\.cache"
 mklink /j "%UserProfile%\.config" "%UserProfile\Documents\Appdata\.config"
 mklink /j "%UserProfile%\.gitconfig" "%UserProfile%\Documents\Appdata\.gitconfig"
 mklink /j "%UserProfile%\.vscode" "%UserProfile\Documents\Appdata\.vscode"
