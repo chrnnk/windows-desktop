@@ -45,6 +45,9 @@ winget install -e --id Spotify.Spotify
 winget install -e --id VideoLAN.VLC
 winget install -e --id Winamp.Winamp
 winget install -e --id OzMartian.VidCutter
+winget install -e --id Microsoft.HEVCVideoExtension_8wekyb3d8bbwe
+winget install -e --id Microsoft.HEIFImageExtension_8wekyb3d8bbwe
+
 
 # Coding
 winget install -e --id GitHub.GitHubDesktop
