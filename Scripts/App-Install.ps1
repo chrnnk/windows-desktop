@@ -119,7 +119,7 @@ function install_choose {
         $listApp = winget list --exact -q $app.name
         if (![String]::Join("", $listApp).Contains($app.name)) {
             Write-Host -ForegroundColor Yellow "Install:" $app.name " ?"
-            $installChoice = Read-Host "Press y for yes, Enter to skip"
+            $installChoice = Read-Host "Press y for yes, Enter to skip "
             if ($installChoice -eq 'y') {
               winget install --exact --interactive --accept-package-agreements --accept-source-agreements $app.name
               if ($LASTEXITCODE -eq 0) {
