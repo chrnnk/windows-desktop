@@ -1,4 +1,3 @@
-# Remove potential bloat
 Get-AppxPackage *Microsoft.3DBuilder* | Remove-AppxPackage
 # Get-AppxPackage *Microsoft.Appconnector* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingFinance* | Remove-AppxPackage
@@ -100,8 +99,6 @@ Get-AppxPackage *Microsoft.ScreenSketch* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.YourPhone* | Remove-AppxPackage
 # Get-AppxPackage *Microsoft.WebMediaExtensions* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.MixedReality.Portal* | Remove-AppxPackage
-
-# Remove potential bloat for new users
 # Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.DesktopAppInstaller* | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.3DBuilder* | Remove-AppxProvisionedPackage -Online
 # Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Appconnector* | Remove-AppxProvisionedPackage -Online
