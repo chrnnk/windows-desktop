@@ -64,10 +64,10 @@ $apps = @(
     @{name = "Microsoft.VC++2015-2022Redist-x64" }
     @{name = "Microsoft.VC++2015-2022Redist-x86" }
 );
-$hasPackageManager = Get-AppxPackage -Name 'Microsoft.Winget.Source' | Select Name, Version
-$hasVCLibs = Get-AppxPackage -Name 'Microsoft.VCLibs.140.00.UWPDesktop' | Select Name, Version
-$hasXAML = Get-AppxPackage -Name 'Microsoft.UI.Xaml.2.7*' | Select Name, Version
-$hasAppInstaller = Get-AppxPackage -Name 'Microsoft.DesktopAppInstaller' | Select Name, Version
+$hasPackageManager = Get-AppxPackage -Name 'Microsoft.Winget.Source' | Select-Object Name, Version
+$hasVCLibs = Get-AppxPackage -Name 'Microsoft.VCLibs.140.00.UWPDesktop' | Select-Object Name, Version
+$hasXAML = Get-AppxPackage -Name 'Microsoft.UI.Xaml.2.7*' | Select-Object Name, Version
+$hasAppInstaller = Get-AppxPackage -Name 'Microsoft.DesktopAppInstaller' | Select-Object Name, Version
 function install_winget {
     Clear-Host
     Write-Host -ForegroundColor Yellow "Checking if WinGet is installed"
