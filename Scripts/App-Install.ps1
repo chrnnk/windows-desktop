@@ -1,20 +1,20 @@
 $apps = @(
-    @{name = "Discord.Discord" }                            # Gaming
+    @{name = "Discord.Discord" }
     @{name = "EpicGames.EpicGamesLauncher" }
     @{name = "Libretro.RetroArch" }
     @{name = "Nvidia.PhysX" }
     @{name = "Valve.Steam" }
     @{name = "WowUp.Wowup" }
     @{name = "Overwolf.CurseForge" }
-    @{name = "Corsair.iCUE.4" }                             # Hardware
+    @{name = "Corsair.iCUE.4" }
     @{name = "Logitech.GHUB" }
     @{name = "Olivia.VIA" }
     @{name = "Nvidia.Broadcast" }
     @{name = "Nvidia.GeForceExperience" }
     @{name = "Nvidia.PhysX" }
-    @{name = "SoftwareFreedomConservancy.QEMUGuestAgent" }  # Virtual Machines
+    @{name = "SoftwareFreedomConservancy.QEMUGuestAgent" }
     @{name = "RedHat.VirtViewer" }
-    @{name = "7zip.7zip" }                                  # Sytem
+    @{name = "7zip.7zip" }
     @{name = "dnGrep.dnGrep" }
     @{name = "JohnMacFarlane.Pandoc" }
     @{name = "Microsoft.Edge" }
@@ -25,28 +25,28 @@ $apps = @(
     @{name = "Obsidian.Obsidian" }
     @{name = "valinet.ExplorerPatcher" }
     @{name = "voidtools.Everything" }
-    @{name = "Brave.Brave" }                                # Internet
+    @{name = "Brave.Brave" }
     @{name = "Mozilla.Firefox" }
     @{name = "Parsec.Parsec" }
     @{name = "qBittorrent.qBittorrent" }
     @{name = "tailscale.tailscale" }
-    @{name = "Plex.Plex" }                                  # Media
+    @{name = "Plex.Plex" }
     @{name = "Spotify.Spotify" }
     @{name = "VideoLAN.VLC" }
     @{name = "Winamp.Winamp" }
     @{name = "OzMartian.VidCutter" }
-    @{name = "Microsoft.HEVCVideoExtension_8wekyb3d8bbwe" } # HEVC-VideoExtension
-    @{name = "Microsoft.HEIFImageExtension_8wekyb3d8bbwe" } # HEIF-PictureExtension
-    @{name = "9MVZQVXJBQ9V"; source = "msstore" }           # AV1 VideoExtension
-    @{name = "9NCTDW2W1BH8"; source = "msstore" }           # Raw-PictureExtension
-    @{name = "9N95Q1ZZPMH4"; source = "msstore" }           # MPEG-2-VideoExtension
-    @{name = "GitHub.GitHubDesktop" }                       # Coding
+    @{name = "Microsoft.HEVCVideoExtension_8wekyb3d8bbwe" }
+    @{name = "Microsoft.HEIFImageExtension_8wekyb3d8bbwe" }
+    @{name = "9MVZQVXJBQ9V"; source = "msstore" }
+    @{name = "9NCTDW2W1BH8"; source = "msstore" }
+    @{name = "9N95Q1ZZPMH4"; source = "msstore" }
+    @{name = "GitHub.GitHubDesktop" }
     @{name = "Git.Git" }
     @{name = "Microsoft.WindowsTerminal" }
     @{name = "Microsoft.VisualStudioCode" }
     @{name = "Starship.Starship" }
     @{name = "Microsoft.PowerShell" }
-    @{name = "Oracle.JavaRuntimeEnvironment" }              # Runtimes
+    @{name = "Oracle.JavaRuntimeEnvironment" }
     @{name = "Microsoft.DotNet.DesktopRuntime.3_1" }
     @{name = "Microsoft.DotNet.DesktopRuntime.6" }
     @{name = "Microsoft.VC++2005Redist-x86" }
