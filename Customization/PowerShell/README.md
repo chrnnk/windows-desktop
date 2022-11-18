@@ -1,6 +1,6 @@
 # One line install
 ```ps
-https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Customization/PowerShell/ps-setup.ps1
+irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Customization/PowerShell/ps-setup.ps1" | iex
 ```
 # Make windows openssh remember ssh key passwords
 1. Start the ssh-agent from Windows Services: 
