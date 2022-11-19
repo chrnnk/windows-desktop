@@ -61,8 +61,6 @@ $apps = @(
     @{name = "Microsoft.VC++2013Redist-x86" }
     @{name = "Microsoft.VCRedist.2015+.x64" }
     @{name = "Microsoft.VCRedist.2015+.x86" }
-    @{name = "Microsoft.VC++2015-2022Redist-x64" }
-    @{name = "Microsoft.VC++2015-2022Redist-x86" }
 );
 $hasPackageManager = Get-AppxPackage -Name 'Microsoft.Winget.Source' | Select-Object Name, Version
 $hasVCLibs = Get-AppxPackage -Name 'Microsoft.VCLibs.140.00.UWPDesktop' | Select-Object Name, Version
