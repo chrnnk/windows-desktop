@@ -2,10 +2,13 @@
 
 Write-Host "`r`nRun this as admin or it will start failing pretty quick`r`n"
 
-Write-Host "`r`nInstall Microsoft.WindowsTerminal`r`n"
+Write-Host "`r`nInstalling Microsoft.VCRedist.2015+.x64`r`n"
+winget install -e --id Microsoft.VCRedist.2015+.x64
+
+Write-Host "`r`nInstalling Microsoft.WindowsTerminal`r`n"
 winget install -e --id Microsoft.WindowsTerminal
 
-Write-Host "`r`nInstall Microsoft.PowerShell`r`n"
+Write-Host "`r`nInstalling Microsoft.PowerShell`r`n"
 winget install -e --id Microsoft.PowerShell
 
 Write-Host "`r`nSetting the Microsoft PSGallery as a trusted source`r`n"
@@ -26,13 +29,13 @@ Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1
 Write-Host "`r`nExtracting cove.zip to $DownloadsFolder`r`n"
 Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove -Force
 
-Write-Host "`r`nWinfetch Install`r`n"
+Write-Host "`r`nInstalling Winfetch`r`n"
 Install-Script -Name pwshfetch-test-1
 
-Write-Host "`r`nPSReadLine Install`r`n"
+Write-Host "`r`nInstalling PSReadLine`r`n"
 Install-Module PSReadLine -Force
 
-Write-Host "`r`nInstall Terminal-Icons`r`n"
+Write-Host "`r`nInstalling Terminal-Icons`r`n"
 Install-Module Terminal-Icons
 
 Write-Host "`r`nSince we're here, winget upgrade everything else`r`n"
