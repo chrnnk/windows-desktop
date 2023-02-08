@@ -1,4 +1,4 @@
-Get-AppxPackage | Select Name, PackageFullName
+Get-AppxPackage | Select-Object Name, PackageFullName
 
 #Name                                        
 #----                                        
@@ -137,104 +137,104 @@ Get-AppxPackage *Microsoft.ScreenSketch* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.YourPhone* | Remove-AppxPackage
 # Get-AppxPackage *Microsoft.WebMediaExtensions* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.MixedReality.Portal* | Remove-AppxPackage
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.DesktopAppInstaller* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.3DBuilder* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Appconnector* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.BingFinance* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.BingNews* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.BingSports* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.BingTranslator* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.BingWeather* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.FreshPaint* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Getstarted* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.GetHelp* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Messaging* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Microsoft3DViewer* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.MicrosoftOfficeHub* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.MicrosoftPowerBIForWindows* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.MicrosoftSolitaireCollection* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.MicrosoftStickyNotes* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.MinecraftUWP* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.NetworkSpeedTest* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.WindowsPhone* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.CommsPhone* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.ConnectivityStore* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Office.Sway* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.BingFoodAndDrink* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.BingTravel* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.BingHealthAndFitness* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *9E2F88E3.Twitter* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *PandoraMediaInc.29680B314EFC2* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Flipboard.Flipboard* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *ShazamEntertainmentLtd.Shazam* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *king.com.CandyCrushSaga* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *king.com.CandyCrushSodaSaga* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *king.com.* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *ClearChannelRadioDigital.iHeartRadio* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *4DF9E0F8.Netflix* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *6Wunderkinder.Wunderlist* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Drawboard.DrawboardPDF* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *22StokedOnIt.NotebookPro* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *2FE3CB00.PicsArt-PhotoStudio* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *41038Axilesoft.ACGMediaPlayer* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *5CB722CC.SeekersNotesMysteriesofDarkwood* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *7458BE2C.WorldofTanksBlitz* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *D52A8D61.FarmVille2CountryEscape | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *TuneIn.TuneInRadio* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *GAMELOFTSA.Asphalt8Airborne* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *TheNewYorkTimes.NYTCrossword* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *DB6EA5DB.CyberLinkMediaSuiteEssentials* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Facebook.Facebook* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *flaregamesGmbH.RoyalRevolt2* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Playtika.CaesarsSlotsFreeCasino* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *A278AB0D.MarchofEmpires* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *KeeperSecurityInc.Keeper* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *ThumbmunkeysLtd.PhototasticCollage* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *INGAG.XING* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *89006A2E.AutodeskSketchBook* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *D5EA27B7.Duolingo-LearnLanguagesforFree* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *46928bounde.EclipseManager* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *ActiproSoftwareLLC.562882FEEB49* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *DolbyLaboratories.DolbyAccess* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *SpotifyAB.SpotifyMusic* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *A278AB0D.DisneyMagicKingdoms* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *WinZipComputing.WinZipUniversal* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.MSPaint* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Office.OneNote* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.OneConnect* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.People* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Print3D* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.SkypeApp* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Wallet* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Windows.Photos* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.WindowsAlarms* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.WindowsCamera* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.windowscommunicationsapps* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.WindowsFeedbackHub* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.WindowsMaps* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.WindowsSoundRecorder* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.XboxApp* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.Xbox.TCUI* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.ZuneMusic* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.ZuneVideo* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *828B5831.HiddenCityMysteryofShadows* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *king.com.BubbleWitch3Saga* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Fitbit.FitbitCoach* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Facebook.InstagramBeta* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Facebook.317180B0BB486* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Expedia.ExpediaHotelsFlightsCarsActivities* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *CAF9E577.Plex* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *AdobeSystemsIncorporated.PhotoshopElements2018* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *A278AB0D.DragonManiaLegends* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *A278AB0D.AsphaltStreetStormRacing* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *828B5831.TheSecretSociety-HiddenMystery* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *USATODAY.USATODAY* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *SiliconBendersLLC.Sketchable* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Nordcurrent.CookingFever* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *NAVER.LINEwin8* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *microsoft.microsoftskydrive* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.AgeCastles* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.ScreenSketch* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.YourPhone* | Remove-AppxProvisionedPackage -Online
-# Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.WebMediaExtensions* | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | where Displayname -EQ *Microsoft.MixedReality.Portal* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.DesktopAppInstaller* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.3DBuilder* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Appconnector* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.BingFinance* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.BingNews* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.BingSports* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.BingTranslator* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.BingWeather* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.FreshPaint* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Getstarted* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.GetHelp* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Messaging* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Microsoft3DViewer* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.MicrosoftOfficeHub* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.MicrosoftPowerBIForWindows* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.MicrosoftSolitaireCollection* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.MicrosoftStickyNotes* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.MinecraftUWP* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.NetworkSpeedTest* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.WindowsPhone* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.CommsPhone* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.ConnectivityStore* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Office.Sway* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.BingFoodAndDrink* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.BingTravel* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.BingHealthAndFitness* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *9E2F88E3.Twitter* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *PandoraMediaInc.29680B314EFC2* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Flipboard.Flipboard* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *ShazamEntertainmentLtd.Shazam* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *king.com.CandyCrushSaga* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *king.com.CandyCrushSodaSaga* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *king.com.* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *ClearChannelRadioDigital.iHeartRadio* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *4DF9E0F8.Netflix* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *6Wunderkinder.Wunderlist* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Drawboard.DrawboardPDF* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *22StokedOnIt.NotebookPro* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *2FE3CB00.PicsArt-PhotoStudio* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *41038Axilesoft.ACGMediaPlayer* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *5CB722CC.SeekersNotesMysteriesofDarkwood* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *7458BE2C.WorldofTanksBlitz* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *D52A8D61.FarmVille2CountryEscape | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *TuneIn.TuneInRadio* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *GAMELOFTSA.Asphalt8Airborne* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *TheNewYorkTimes.NYTCrossword* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *DB6EA5DB.CyberLinkMediaSuiteEssentials* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Facebook.Facebook* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *flaregamesGmbH.RoyalRevolt2* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Playtika.CaesarsSlotsFreeCasino* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *A278AB0D.MarchofEmpires* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *KeeperSecurityInc.Keeper* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *ThumbmunkeysLtd.PhototasticCollage* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *INGAG.XING* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *89006A2E.AutodeskSketchBook* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *D5EA27B7.Duolingo-LearnLanguagesforFree* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *46928bounde.EclipseManager* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *ActiproSoftwareLLC.562882FEEB49* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *DolbyLaboratories.DolbyAccess* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *SpotifyAB.SpotifyMusic* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *A278AB0D.DisneyMagicKingdoms* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *WinZipComputing.WinZipUniversal* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.MSPaint* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Office.OneNote* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.OneConnect* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.People* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Print3D* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.SkypeApp* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Wallet* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Windows.Photos* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.WindowsAlarms* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.WindowsCamera* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.windowscommunicationsapps* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.WindowsFeedbackHub* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.WindowsMaps* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.WindowsSoundRecorder* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.XboxApp* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.Xbox.TCUI* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.ZuneMusic* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.ZuneVideo* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *828B5831.HiddenCityMysteryofShadows* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *king.com.BubbleWitch3Saga* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Fitbit.FitbitCoach* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Facebook.InstagramBeta* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Facebook.317180B0BB486* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Expedia.ExpediaHotelsFlightsCarsActivities* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *CAF9E577.Plex* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *AdobeSystemsIncorporated.PhotoshopElements2018* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *A278AB0D.DragonManiaLegends* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *A278AB0D.AsphaltStreetStormRacing* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *828B5831.TheSecretSociety-HiddenMystery* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *USATODAY.USATODAY* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *SiliconBendersLLC.Sketchable* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Nordcurrent.CookingFever* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *NAVER.LINEwin8* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *microsoft.microsoftskydrive* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.AgeCastles* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.ScreenSketch* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.YourPhone* | Remove-AppxProvisionedPackage -Online
+# Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.WebMediaExtensions* | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object Displayname -EQ *Microsoft.MixedReality.Portal* | Remove-AppxProvisionedPackage -Online
