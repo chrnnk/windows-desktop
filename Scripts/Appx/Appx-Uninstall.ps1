@@ -1,3 +1,41 @@
+Get-AppxPackage | Select Name, PackageFullName
+
+#Name                                        
+#----                                        
+#Microsoft.Getstarted                        
+#MicrosoftTeams                              
+#Microsoft.Paint                             
+#Microsoft.ZuneMusic                         
+#Microsoft.WindowsNotepad                    
+#Microsoft.ScreenSketch                      
+#Microsoft.XboxGameOverlay                   
+#Microsoft.People                            
+#Microsoft.BingWeather                       
+#Microsoft.GamingApp                         
+#Microsoft.BingNews                          
+#Microsoft.WindowsMaps                       
+#Microsoft.ZuneVideo                         
+#Microsoft.WindowsFeedbackHub                
+#Clipchamp.Clipchamp                         
+#Microsoft.MicrosoftStickyNotes              
+#Microsoft.MicrosoftOfficeHub                
+#Microsoft.YourPhone                         
+#Microsoft.WindowsCalculator                 
+#Microsoft.PowerAutomateDesktop              
+#Microsoft.GetHelp                           
+#Microsoft.Windows.PeopleExperienceHost      
+#microsoft.windowscommunicationsapps         
+#Microsoft.Xbox.TCUI                         
+#Microsoft.WindowsSoundRecorder              
+#Microsoft.MicrosoftSolitaireCollection      
+
+get-appxpackage -AllUsers Microsoft.Getstarted                                    | remove-appxpackage
+get-appxpackage -AllUsers Microsoft.XboxGamingOverlay                             | remove-appxpackage
+get-appxpackage -AllUsers BingWeather                                             | remove-appxpackage
+get-appxpackage -AllUsers MicrosoftTeams_23002.403.1788.1930_x64__8wekyb3d8bbwe   | remove-appxpackage
+get-appxpackage -AllUsers Microsoft.BingWeather                                   | remove-appxpackage
+get-appxpackage -AllUsers Microsoft.WindowsAlarms                                 | remove-appxpackage
+
 Get-AppxPackage *Microsoft.3DBuilder* | Remove-AppxPackage
 # Get-AppxPackage *Microsoft.Appconnector* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingFinance* | Remove-AppxPackage
