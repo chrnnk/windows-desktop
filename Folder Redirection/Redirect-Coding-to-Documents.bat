@@ -1,3 +1,3 @@
-mklink /j "%UserProfile%\.android" "%UserProfile%\Documents\Appdata\.android"
-mklink /j "%UserProfile%\.config" "%UserProfile%\Documents\Appdata\.config"
-mklink /j "%UserProfile%\.ssh" "%UserProfile%\Documents\Appdata\.ssh"
+mklink /j "%UserProfile%\.android" "%OneDrive%\Documents\Appdata\.android"
+mklink /j "%UserProfile%\.config" "%OneDrive%\Documents\Appdata\.config"
+mklink /j "%UserProfile%\.ssh" "%OneDrive%\Documents\Appdata\.ssh"
