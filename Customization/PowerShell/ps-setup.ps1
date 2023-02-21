@@ -59,4 +59,4 @@ if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
 		 Write-Host "`r`n[$PROFILE] already exists, not touched.`r`n"
  }
 
-Write-Host "`r`nBrowse to $DownloadsFolder\cove, select and install all fonts. Then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal`r`n"
+Write-Host "`r`nBrowse to Downloads\cove, select and install all fonts. Then set ""CaskaydiaCove Nerd Font Mono"" as Default profile Appearance in Windows Terminal`r`n"
