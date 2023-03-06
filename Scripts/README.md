@@ -4,7 +4,7 @@ irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Customization
 ```
 To run scripts from local PC without signing
 ```
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 ```
 ```
 https://aka.ms/vs/17/release/vc_redist.x64.exe
