@@ -1,6 +1,7 @@
 # irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Customization/PowerShell/ps-setup.ps1" | iex
 
 Write-Host "`r`nRun this as admin or it will start failing pretty quick`r`n"
+Pause
 
 Write-Host "`r`nInstalling Microsoft.VCRedist.2015+.x64`r`n"
 winget install -e --id Microsoft.VCRedist.2015+.x64
