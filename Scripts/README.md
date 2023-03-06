@@ -1,4 +1,4 @@
-You can run this script directly from a URL with this command:
+You can run a script directly from a URL with this command:
 ```
 irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Customization/PowerShell/ps-setup.ps1" | iex
 ```
