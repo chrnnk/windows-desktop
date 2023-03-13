@@ -15,9 +15,11 @@ create new folder, name it:
 Folder.{ED7BA470-8E54-465E-825C-99712043E01C}
 ```
 ### Set up Windows for SSH
+Generate key pair
 ```
 ssh-keygen -t ed25519
 ```
+Send key pair to remote server
 ```
 type .ssh\id_ed25519.pub | ssh -p PORT root@SERVERIP "cat >> .ssh/authorized_keys"
 ```
