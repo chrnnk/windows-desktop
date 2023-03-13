@@ -26,6 +26,7 @@ type .ssh\id_ed25519.pub | ssh -p PORT root@SERVERIP "cat >> .ssh/authorized_key
 Start the ssh-agent from Windows Services from Admin Command Prompt:  
 ```
 sc config ssh-agent start=auto
+net start ssh-agent
 ```
 Find the OpenSSH Authentication Agent in the list and double click on it. Set it to "Automatic" and start it.  
 Add your SSH key to the ssh-agent by issuing the ssh-add command and entering your passphrase:  
