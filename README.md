@@ -29,7 +29,7 @@ Find the OpenSSH Authentication Agent in the list and double click on it.
 Set it to "Automatic" and start it.  
 Configure Git to use the Windows 10 implementation of OpenSSH by issuing the following command in Powershell:  
 ```git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe```  
-Configure SSH to automatically add the keys to the agent on startup by editing the config file found at $HOME\.ssh\config (full path - C:\Users\%YOUR_USERNAME%\.ssh\config), and add the following lines:
+Configure SSH to automatically add the keys to the agent on startup by editing the config file found at ```$HOME\.ssh\config``` (full path - ```C:\Users\%YOUR_USERNAME%\.ssh\config```), and add the following lines:
 ```
 Host *
 	AddKeysToAgent yes
