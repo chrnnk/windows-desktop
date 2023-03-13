@@ -28,12 +28,15 @@ Start the ssh-agent from Windows Services from Admin Command Prompt:
 sc config ssh-agent start=auto
 net start ssh-agent
 ```
-Find the OpenSSH Authentication Agent in the list and double click on it. Set it to "Automatic" and start it.  
 Add your SSH key to the ssh-agent by issuing the ssh-add command and entering your passphrase:  
-```ssh-add $HOME/.ssh/your_file_name```
+```
+ssh-add $HOME/.ssh/your_file_name
+```
 
 Configure Git to use the Windows 10 implementation of OpenSSH by issuing the following command in Powershell:  
-```git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe```  
+```
+git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe
+```  
 Configure SSH to automatically add the keys to the agent on startup by editing the config file found at ```$HOME\.ssh\config``` (full path - ```C:\Users\%YOUR_USERNAME%\.ssh\config```), and add the following lines:
 ```
 Host *
