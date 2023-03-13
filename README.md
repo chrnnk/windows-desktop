@@ -42,6 +42,6 @@ Host github.com
 	User your_user_name
 	IdentityFile ~/.ssh/your_file_name
 ```
-Add your SSH key to the ssh-agent by issuing the ssh-add command and entering your passphrase:
-ssh-add $HOME/.ssh/your_file_name
+Add your SSH key to the ssh-agent by issuing the ssh-add command and entering your passphrase:  
+```ssh-add $HOME/.ssh/your_file_name```
 Done! Now restart your Powershell and even Windows if necessary.
