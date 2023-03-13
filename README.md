@@ -22,7 +22,7 @@ ssh-keygen -t ed25519
 ```
 type .ssh\id_ed25519.pub | ssh -p PORT root@SERVERIP "cat >> .ssh/authorized_keys"
 ```
-You should not use the Open SSH client that comes with Git for Windows. Instead, Windows 10 has its own implementation of Open SSH that is integrated with the system. To achieve this:
+You should not use the Open SSH client that comes with Git for Windows. Instead, Windows 10 has its own implementation of Open SSH that is integrated with the system. To achieve this: 
 Start the ssh-agent from Windows Services:
 Type ```Services``` in the Start Menu or Win+R and then type ```services.msc``` to launch the Services window;
 Find the OpenSSH Authentication Agent in the list and double click on it;
