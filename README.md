@@ -9,6 +9,10 @@ winget install Microsoft.VCRedist.2015+.x64
 ```
 winget upgrade --all
 ```
+### map nfs from cmd
+```
+mount -o anon \\10.10.50.82\mnt\user\media Z:
+```
 ### god mode control panel applet
 create new folder, name it:
 ```
