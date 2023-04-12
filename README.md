@@ -9,6 +9,11 @@ winget install Microsoft.VCRedist.2015+.x64
 ```
 winget upgrade --all
 ```
+### Install NFS-Client on Windows
+Powershell Admin
+```powershell
+Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForNFS-Infrastructure -Online -NoRestart
+```
 ### map nfs from cmd
 ```
 mount -o anon \\NASIP\mnt\user\media Z:
