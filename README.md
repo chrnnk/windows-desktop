@@ -17,6 +17,7 @@ Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForN
 ### map nfs from cmd
 ```
 mount -o anon \\NASIP\mnt\user\media Z:
+mount -o anon \\unraid\mnt\user\media Z:
 ```
 ### god mode control panel applet
 create new folder, name it:
