@@ -31,7 +31,7 @@ Write-Host "`r`nExtracting cove.zip to $DownloadsFolder`r`n"
 Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove -Force
 
 Write-Host "`r`nInstalling Winfetch`r`n"
-Install-Script winfetch
+Install-Script winfetch -Force
 
 Write-Host "`r`nInstalling PSReadLine`r`n"
 Install-Module PSReadLine -Force
