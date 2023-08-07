@@ -1,6 +1,6 @@
 # windows-desktop
 Collection of tweaks, customizations, scripts, etc.
-
+---
 ### fix 64-bit cmd in terminal on w22h2
 ```
 winget install Microsoft.VCRedist.2015+.x64
@@ -9,6 +9,7 @@ winget install Microsoft.VCRedist.2015+.x64
 ```
 winget upgrade --all
 ```
+---
 ### Install NFS-Client on Windows
 Powershell Admin
 ```powershell
@@ -19,11 +20,13 @@ Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForN
 mount -o anon \\NASIP\mnt\user\media Z:
 mount -o anon \\unraid\mnt\user\media Z:
 ```
+---
 ### god mode control panel applet
 create new folder, name it:
 ```
 Folder.{ED7BA470-8E54-465E-825C-99712043E01C}
 ```
+---
 ### Set up Windows for SSH
 Generate key pair
 ```
