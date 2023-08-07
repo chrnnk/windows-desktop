@@ -27,7 +27,7 @@ winget upgrade --all
 ```
 ### Install NFS-Client on Windows
 Powershell Admin
-```powershell
+``` powershell
 Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForNFS-Infrastructure -Online -NoRestart
 ```
 map nfs from cmd
