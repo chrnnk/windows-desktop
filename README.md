@@ -1,4 +1,4 @@
-# windows-desktop
+# Windows-desktop
 ## Collection of tweaks, customizations, scripts, etc.
 ### Windows 11 Installation Bypass
 To Bypass TPM, RAM, or SecureBoot
@@ -22,7 +22,7 @@ OOBE\BYPASSNRO
 winget install Microsoft.VCRedist.2015+.x64
 ```
 ### Upgrade all apps with winget
-```
+```powershell
 winget upgrade --all
 ```
 ### Install NFS-Client on Windows
@@ -31,7 +31,7 @@ Powershell Admin
 Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForNFS-Infrastructure -Online -NoRestart
 ```
 map nfs from cmd
-```
+```PowerShell
 mount -o anon \\NASIP\mnt\user\media Z:
 mount -o anon \\unraid\mnt\user\media Z:
 ```
