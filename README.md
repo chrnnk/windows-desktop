@@ -18,11 +18,11 @@ Shift+F10 during installation\
 OOBE\BYPASSNRO
 ```
 ### Fix 64-bit cmd in terminal on 11-22h2
-```
+``` powershell
 winget install Microsoft.VCRedist.2015+.x64
 ```
 ### Upgrade all apps with winget
-```powershell
+``` powershell
 winget upgrade --all
 ```
 ### Install NFS-Client on Windows
@@ -31,7 +31,7 @@ Powershell Admin
 Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForNFS-Infrastructure -Online -NoRestart
 ```
 map nfs from cmd
-```PowerShell
+```
 mount -o anon \\NASIP\mnt\user\media Z:
 mount -o anon \\unraid\mnt\user\media Z:
 ```
@@ -42,7 +42,7 @@ Folder.{ED7BA470-8E54-465E-825C-99712043E01C}
 ```
 ### Set up Windows for SSH
 Generate key pair
-```
+``` powershell
 ssh-keygen -t ed25519
 ```
 Send key pair to remote server
