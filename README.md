@@ -1,6 +1,5 @@
 # windows-desktop
 ## Collection of tweaks, customizations, scripts, etc.
----
 ### Windows 11 Installation Bypass
 To Bypass TPM, RAM, or SecureBoot
 ```
@@ -26,7 +25,6 @@ winget install Microsoft.VCRedist.2015+.x64
 ```
 winget upgrade --all
 ```
----
 ### Install NFS-Client on Windows
 Powershell Admin
 ```powershell
@@ -37,13 +35,11 @@ map nfs from cmd
 mount -o anon \\NASIP\mnt\user\media Z:
 mount -o anon \\unraid\mnt\user\media Z:
 ```
----
 ### God mode Control Panel applet
 create new folder, name it:
 ```
 Folder.{ED7BA470-8E54-465E-825C-99712043E01C}
 ```
----
 ### Set up Windows for SSH
 Generate key pair
 ```
