@@ -5,7 +5,7 @@ Collection of tweaks, customizations, scripts, etc.
 ```
 winget install Microsoft.VCRedist.2015+.x64
 ```
-### winget upgrade all
+### Upgrade all apps with winget
 ```
 winget upgrade --all
 ```
@@ -15,7 +15,7 @@ Powershell Admin
 ```powershell
 Enable-WindowsOptionalFeature -FeatureName ServicesForNFS-ClientOnly, ClientForNFS-Infrastructure -Online -NoRestart
 ```
-### map nfs from cmd
+map nfs from cmd
 ```
 mount -o anon \\NASIP\mnt\user\media Z:
 mount -o anon \\unraid\mnt\user\media Z:
