@@ -1,6 +1,7 @@
 # windows-desktop
-### Collection of tweaks, customizations, scripts, etc.
+## Collection of tweaks, customizations, scripts, etc.
 ---
+### Windows 11 Installation Bypass
 To Bypass TPM, RAM, or SecureBoot
 ```
 Shift+F10 during installation\
