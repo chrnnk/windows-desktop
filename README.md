@@ -21,7 +21,7 @@ mount -o anon \\NASIP\mnt\user\media Z:
 mount -o anon \\unraid\mnt\user\media Z:
 ```
 ---
-### god mode control panel applet
+### God mode Control Panel applet
 create new folder, name it:
 ```
 Folder.{ED7BA470-8E54-465E-825C-99712043E01C}
