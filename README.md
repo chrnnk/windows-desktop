@@ -15,8 +15,8 @@ BypassSecureBootCheck, change the Value data to 1, and press OK.
 To Bypass No Internet
 ```
 Shift+F10 during installation\
-OOBE\BYPASSNRO```
-
+OOBE\BYPASSNRO
+```
 ### Fix 64-bit cmd in terminal on 11-22h2
 ```
 winget install Microsoft.VCRedist.2015+.x64
