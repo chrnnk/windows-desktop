@@ -1,7 +1,7 @@
 # windows-desktop
 Collection of tweaks, customizations, scripts, etc.
 ---
-### fix 64-bit cmd in terminal on w22h2
+### Fix 64-bit cmd in terminal on 11-22h2
 ```
 winget install Microsoft.VCRedist.2015+.x64
 ```
