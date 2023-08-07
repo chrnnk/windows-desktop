@@ -46,31 +46,31 @@ Generate key pair
 ssh-keygen -t ed25519
 ```
 Send key pair to remote server
-```
+``` powershell
 type .ssh\id_ed25519.pub | ssh -p PORT root@SERVERIP "cat >> .ssh/authorized_keys"
 ```
 Start the ssh-agent from Windows Services from Admin Command Prompt:  
-```
+``` powershell
 sc config ssh-agent start=auto
 net start ssh-agent
 ```
 Add your SSH key to the ssh-agent by issuing the ssh-add command and entering your passphrase:  
-```
+``` powershell
 ssh-add $HOME/.ssh/your_file_name
 ```
 
 Configure Git to use the Windows 10 implementation of OpenSSH by issuing the following command in Powershell:  
-```
+``` powershell
 git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe
 ```  
 Configure SSH to automatically add the keys to the agent on startup by editing the config file found at ```$HOME\.ssh\config``` (full path - ```C:\Users\%YOUR_USERNAME%\.ssh\config```), and add the following lines:
-```
+``` powershell
 Host *
 	AddKeysToAgent yes
 	IdentitiesOnly yes
 ```
 You can also add the following lines if you generated an SSH key with custom name or multiple SSH keys:
-```
+``` powershell
 Host github.com
 	HostName github.com
 	User your_user_name
