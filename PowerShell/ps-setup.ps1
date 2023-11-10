@@ -30,8 +30,8 @@ Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1
 Write-Host "`r`nExtracting cove.zip to $DownloadsFolder`r`n"
 Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove -Force
 
-Write-Host "`r`nInstalling Winfetch`r`n"
-Install-Script winfetch -Force
+Write-Host "`r`nInstalling Neofetch-Win`r`n"
+winget install neofetch-win
 
 Write-Host "`r`nInstalling PSReadLine`r`n"
 Install-Module PSReadLine -Force
