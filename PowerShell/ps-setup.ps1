@@ -39,8 +39,8 @@ winget install neofetch-win
 Write-Host "`r`nInstalling Terminal-Icons`r`n"
 Install-Module Terminal-Icons
 
-Write-Host "`r`nSince we're here, winget upgrade everything else`r`n"
-winget upgrade --all
+# Write-Host "`r`nSince we're here, winget upgrade everything else`r`n"
+# winget upgrade --all
 
 # If the file does not exist, create it.
 if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
