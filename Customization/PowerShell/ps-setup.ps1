@@ -3,8 +3,8 @@
 Write-Host "`r`nRun this as admin or it will start failing pretty quick`r`n"
 Pause
 
-Write-Host "`r`nInstalling Microsoft.VCRedist.2015+.x64`r`n"
-winget install -e --id Microsoft.VCRedist.2015+.x64
+# Write-Host "`r`nInstalling Microsoft.VCRedist.2015+.x64`r`n"
+# winget install -e --id Microsoft.VCRedist.2015+.x64
 
 Write-Host "`r`nInstalling Microsoft.WindowsTerminal`r`n"
 winget install -e --id Microsoft.WindowsTerminal
@@ -30,11 +30,11 @@ Invoke-RestMethod https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1
 Write-Host "`r`nExtracting cove.zip to $DownloadsFolder`r`n"
 Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder/cove -Force
 
-Write-Host "`r`nInstalling Winfetch`r`n"
-Install-Script winfetch -Force
+Write-Host "`r`nInstalling Neofetch-Win`r`n"
+winget install neofetch-win
 
-Write-Host "`r`nInstalling PSReadLine`r`n"
-Install-Module PSReadLine -Force
+# Write-Host "`r`nInstalling PSReadLine`r`n"
+# Install-Module PSReadLine -Force
 
 Write-Host "`r`nInstalling Terminal-Icons`r`n"
 Install-Module Terminal-Icons
@@ -42,7 +42,7 @@ Install-Module Terminal-Icons
 Write-Host "`r`nSince we're here, winget upgrade everything else`r`n"
 winget upgrade --all
 
-#If the file does not exist, create it.
+# If the file does not exist, create it.
 if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
      try {
          Invoke-RestMethod https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
