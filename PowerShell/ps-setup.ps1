@@ -33,8 +33,8 @@ Expand-Archive -Path $DownloadsFolder/cove.zip -DestinationPath $DownloadsFolder
 Write-Host "`r`nInstalling Neofetch-Win`r`n"
 winget install neofetch-win
 
-Write-Host "`r`nInstalling PSReadLine`r`n"
-Install-Module PSReadLine -Force
+#Write-Host "`r`nInstalling PSReadLine`r`n"
+#Install-Module PSReadLine -Force
 
 Write-Host "`r`nInstalling Terminal-Icons`r`n"
 Install-Module Terminal-Icons
