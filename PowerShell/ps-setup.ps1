@@ -1,4 +1,4 @@
-# irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Customization/PowerShell/ps-setup.ps1" | iex
+# irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/PowerShell/ps-setup.ps1" | iex
 
 Write-Host "`r`nRun this as admin or it will start failing pretty quick`r`n"
 Pause
