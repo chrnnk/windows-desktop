@@ -1,4 +1,4 @@
-# irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/PowerShell/ps-setup.ps1" | iex
+# irm "https://raw.githubusercontent.com/chrnnk/windows-desktop/main/PowerShell/ps-setup.ps1" | iex
 
 Write-Host "`r`nRun this as admin or it will start failing pretty quick`r`n"
 Pause
@@ -45,7 +45,7 @@ Install-Module Terminal-Icons
 # If the file does not exist, create it.
 if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
      try {
-         Invoke-RestMethod https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
+         Invoke-RestMethod https://raw.githubusercontent.com/chrnnk/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
          Write-Host "`r`nThe profile @ [$PROFILE] has been created.`r`n"
      }
      catch {
@@ -55,7 +55,7 @@ if (-not(Test-Path -Path $PROFILE -PathType Leaf)) {
 # If the file already exists, show the message and do nothing.
  else {
 		 # Get-Item -Path $PROFILE | Move-Item -Destination oldprofile.ps1
-		 # Invoke-RestMethod https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
+		 # Invoke-RestMethod https://raw.githubusercontent.com/chrnnk/windows-desktop/main/Powershell/Microsoft.PowerShell_profile.ps1 -o $PROFILE
 		 # Write-Host "The profile @ [$PROFILE] has been created and old profile removed."
 		 Write-Host "`r`n[$PROFILE] already exists, not touched.`r`n"
  }

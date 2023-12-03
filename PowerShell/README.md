@@ -1,7 +1,7 @@
 # Two line install
 ```ps
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-irm "https://raw.githubusercontent.com/chrxnn/windows-desktop/main/Customization/PowerShell/ps-setup.ps1" | iex
+irm "https://raw.githubusercontent.com/chrnnk/windows-desktop/main/Customization/PowerShell/ps-setup.ps1" | iex
 ```
 # Make windows openssh remember ssh key passwords
 1. Start the ssh-agent from Windows Services: 
