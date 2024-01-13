@@ -1,0 +1,54 @@
+; Posy's Cursor Strokeless
+; michieldb.nl
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+[Scheme.Cur]
+Posy Strokeless.cur
+Posy Strokeless help.cur
+Posy Strokeless background.cur
+Posy wait max 96.ani
+Posy beam.cur
+Posy Strokeless cross.cur
+Posy Strokeless size NS.cur
+Posy Strokeless size EW.cur
+Posy Strokeless size NwSe.cur
+Posy Strokeless size NeSw.cur
+Posy Strokeless move.cur
+Posy Strokeless link.cur
+Posy precise.cur
+Posy pen.cur
+Posy alt.cur
+
+[Scheme.Txt]
+
+[Strings]
+CUR_DIR       = "Cursors\Posys Cursor Strokeless"
+SCHEME_NAME   = "Posy's Cursor Strokeless"
+pointer       = "Posy Strokeless.cur"
+help          = "Posy Strokeless help.cur"
+work          = "Posy Strokeless background.cur"
+busy          = "Posy wait max 96.ani"
+text          = "Posy beam.cur"
+unavailiable  = "Posy Strokeless cross.cur"
+vert          = "Posy Strokeless size NS.cur"
+horz          = "Posy Strokeless size EW.cur"
+dgn1          = "Posy Strokeless size NwSe.cur"
+dgn2          = "Posy Strokeless size NeSw.cur"
+move          = "Posy Strokeless move.cur"
+link          = "Posy Strokeless link.cur"
+cross         = "Posy precise.cur"
+hand          = "Posy pen.cur"
+alternate     = "Posy alt.cur"
